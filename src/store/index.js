@@ -2,59 +2,6 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import api from '../utils/api';
 
-
-const INITIAL_STATE = {
-    error: null,
-    loading: false,
-    login: false,
-    person: {},
-    user: {},
-};
-
-function appReducer(state = INITIAL_STATE, action) {
-    switch(action.type) {
-        case 'FETCH_REQUEST': {
-            return {
-                ...state,
-                loading: true,
-            }
-        }
-
-        case 'FETCH_FAILURE': {
-            const { error } = action.payload;
-            return {
-                ...state,
-                error,
-                loading: false,
-            }
-        }
-
-        case 'FETCH_PERSON_SUCCESS': {
-            const { person } = action.payload;
-            return {
-                ...state,
-                person,
-                loading: false,
-            }
-        }
-
-        case 'FETCH_USER_SUCCESS': {
-            const { user } = action.payload;
-            return {
-                ...state,
-                user,
-                loading: false,
-            }
-        }
-
-        default: {
-            return {
-                ...state
-            }
-        }
-    }
-}
-
 // Thunk
 const getPersonRequest = () => {
     return function(dispatch) {

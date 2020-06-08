@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
     flex: 1;
-    margin: 2em auto;
+    margin: 5% auto;
     max-width: 1080px;
     min-height: 1000px;    
     padding: 24px;
@@ -11,10 +11,11 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledContent = styled.div`
-    background-color: #ffffff;
+    background-color: #FFF;
     //border: 1px solid #e9e9e9;
-    border-radius: 3px;
-    box-shadow: 0 4px 8px -2px rgba(9,30,66,.25), 0 0 0 1px rgba(9,30,66,.08);
+    border-radius: 6px;
+    //box-shadow: 0 4px 8px -2px rgba(9,30,66,.25), 0 0 0 1px rgba(9,30,66,.08);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
     margin-top: 16px;
     min-height: 200px;
     padding: 40px;

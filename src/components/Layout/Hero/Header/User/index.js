@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { UserWrapper, UserInner } from './styled';
 import { Icon, Popover } from 'antd';
-import { getUserRequest } from './../../../store';
+import { getUserRequest } from './../../../../../store';
 
 
 /**
@@ -44,7 +44,7 @@ class User extends Component {
                         onVisibleChange={this.handleVisibleChange}
                     >
                         {/* <Icon type="user" /> */}
-                        <FontAwesomeIcon icon={faUserCircle} size="2x" color="black" />
+                        <FontAwesomeIcon icon={faUserCircle} size="2x" color="white" />
                     </Popover>
                 </UserInner>
             </UserWrapper>

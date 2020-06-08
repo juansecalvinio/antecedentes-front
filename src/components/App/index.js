@@ -5,8 +5,7 @@ import { Provider } from 'react-redux';
 
 import { GlobalStyle } from './styled';
 
-import Header from './../Header';
-import Footer from './../Footer';
+import Layout from '../Layout';
 
 import LoginPage from './../../pages/LoginPage';
 import HomePage from '../../pages/HomePage';
@@ -26,7 +25,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <GlobalStyle />
-          <Header />
+          <Layout />
           <div className="container" style={{ flex:1 }}>
             <Switch>
               <Route path="/" exact component={HomePage} />
@@ -36,8 +35,7 @@ class App extends Component {
               <Route path="/insert" component={InsertPage} />
               <Route path="/register" component={RegisterPage} />
             </Switch>
-          </div>
-          <Footer />        
+          </div>        
         </Router>
       </Provider>
     );

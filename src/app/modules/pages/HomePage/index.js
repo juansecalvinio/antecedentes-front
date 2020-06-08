@@ -7,6 +7,7 @@ import {
     HomeCenterInner,
     HomeCenterOption,
     HomeStyledButton,
+    StyledCard
 } from './styled';
 
 import { Typography } from 'antd';
@@ -29,17 +30,19 @@ class HomePage extends Component {
                 <HomeWrapper>
                     <HomeCenter>
 
-                        <HomeCenterTitle>
+                        {/* <HomeCenterTitle>
                             <Title level={3}>Seleccione una opción para continuar:</Title>
-                        </HomeCenterTitle>
+                        </HomeCenterTitle> */}
 
                         <HomeCenterInner>                            
                             <HomeCenterOption>
-                                <HomeStyledButton size="large" type="default" onClick={this.handleClickSearch}>Búsqueda</HomeStyledButton>
+                                {/* <HomeStyledButton size="large" type="default" onClick={this.handleClickSearch}>Búsqueda</HomeStyledButton> */}
+                                <StyledCard hoverable></StyledCard>
                             </HomeCenterOption>
 
                             <HomeCenterOption>
-                                <HomeStyledButton size="large" type="default" onClick={this.handleClickInsert}>Ingresar datos</HomeStyledButton>
+                                {/* <HomeStyledButton size="large" type="default" onClick={this.handleClickInsert}>Ingresar datos</HomeStyledButton> */}
+                                <StyledCard hoverable></StyledCard>
                             </HomeCenterOption>
                         </HomeCenterInner>
 
